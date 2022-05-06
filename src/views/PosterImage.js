@@ -27,7 +27,7 @@ export const PostImage = () => {
         </div>
         <img
           src={PosterImage}
-          alt="Poster Image"
+          alt="PosterImage"
           style={{ width: "inherit" }}
         />
       </div>
