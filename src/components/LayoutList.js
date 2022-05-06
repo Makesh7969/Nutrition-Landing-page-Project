@@ -2,7 +2,6 @@ import React from "react";
 
 export const LayoutList = (props) => {
   const {
-    image,
     heading,
     paragraph,
     subText,

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const LayoutThree = (props) => {
-  const { image, heading, paragraph } = props;
+  const { heading, paragraph } = props;
   return (
     <div className="container my-5">
       <div className="row">

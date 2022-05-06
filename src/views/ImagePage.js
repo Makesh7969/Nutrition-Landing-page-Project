@@ -7,7 +7,7 @@ export const ImagePage = () => {
     <>
       <Header />
       <div className="container">
-        <img src={Image} alt="Nutrition Image" style={{position: "relative", left:"15%"}}/>
+        <img src={Image} alt="NutritionImage" style={{position: "relative", left:"15%"}}/>
       </div>
     </>
   );

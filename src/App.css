@@ -11,6 +11,8 @@ li,
 dd,
 dt,
 a,
+label,
+button,
 p {
   font-family: "Poppins", sans-serif;
   color: #283c78;
@@ -29,6 +31,50 @@ p {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@media only screen and (max-width: 767px){
+  .test{
+    width: 360px !important;
+    height: 250px !important;
+  }
+  .navbar-demo  button.menu-btn {
+       position: absolute;
+       top: 0;
+       right: 0;
+       background-color: unset;
+       border: 0;
+       font-size: 26px;
+       display:block;
+       padding: 23px;
+       color: #fff;
+       outline: none;
+   } 
+   .navbar-demo{
+     height:100%;
+     z-index: 999;
+ }
+   .navbar-demo .nav-bar {
+       left: -950px;
+       background-color: #000000d9;
+       transition: 1s;
+       height: 100%;
+   }
+
+ .navbar-demo.open-nav  .nav-bar{
+     left: 0;
+     width: 100%;
+     transition: left 0.5s;
+     height: 100%;
+ }
+
+ .navbar-demo .nav-bar ul li a {
+      display: block;
+      color: #fff;
+ }
+ .navbar-demo.open-nav button.menu-btn i:before {
+     content: '\f00d ';
+ }
 }
 
 .App-header {
@@ -95,4 +141,14 @@ dt{
 .image-content button:hover {
   background-color: white;
   border: 2px solid #000 !important;
+}
+
+input.form-control, input.form-control:focus {
+  background: #F0F0FF;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  font-size: .6rem;
 }
